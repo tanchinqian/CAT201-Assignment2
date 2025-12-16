@@ -1,7 +1,27 @@
 import React from 'react';
+import FeatureCard from '../components/FeatureCard';
 import './Home.css';
 
 const Home = () => {
+
+  const features = [
+    {
+      title: "Fast Speed",
+      desc: "Our platform is optimized for lightning-fast performance.",
+      icon: "🚀" 
+    },
+    {
+      title: "Secure",
+      desc: "We prioritize data protection with top-tier security standards.",
+      icon: "🔒"
+    },
+    {
+      title: "Scalable",
+      desc: "Solutions that grow with your business without breaking.",
+      icon: "📈"
+    }
+  ];
+
   return (
     <div className="home-container">
       
@@ -39,22 +59,16 @@ const Home = () => {
       <section className="features">
         <h2>Why Choose Us?</h2>
         <div className="features-grid">
-          
-          <div className="feature-card">
-            <h3>🚀 Fast Speed</h3>
-            <p>Our platform is optimized for lightning-fast performance.</p>
+          <div className="features-grid">
+            {features.map((item, index) => (
+              <FeatureCard 
+                key={index}
+                title={item.title}
+                desc={item.desc}
+                icon={item.icon}
+              />
+            ))}
           </div>
-
-          <div className="feature-card">
-            <h3>🔒 Secure</h3>
-            <p>Your data is protected by enterprise-grade security standards.</p>
-          </div>
-
-          <div className="feature-card">
-            <h3>🎨 Modern Design</h3>
-            <p>Beautiful layouts that look great on any device.</p>
-          </div>
-
         </div>
       </section>
 
