@@ -116,3 +116,32 @@
   line-height: 1.5;
 }
 
+.mission-section {
+    background-color: #f8f9fa;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.mission-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mission-box {
+    background: white;
+    padding: 2rem;
+    border-left: 5px solid #764ba2;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.mission-box h2 {
+    color: #764ba2;
+    margin-bottom: 1rem;
+}
