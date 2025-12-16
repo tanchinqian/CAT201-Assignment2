@@ -50,6 +50,7 @@
   justify-content: center;
   gap: 15px;
 }
+
 /*Button Styling*/
 .btn {
   padding: 12px 30px;
@@ -122,6 +123,7 @@
   color: #666;
   line-height: 1.5;
 }
+
 /*Main Content Styling*/
 .info-wrapper {
 
@@ -138,6 +140,7 @@
 
   
 }
+
 /* Mission Section Styling*/
 .mission-section {
 
@@ -146,7 +149,6 @@
   justify-content: center; /* Centers the inner container */
 
 }
-
 
 .mission-container {
     max-width: 1000px;
