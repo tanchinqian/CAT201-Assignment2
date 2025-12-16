@@ -1,5 +1,7 @@
 import React from 'react';
 import FeatureCard from '../components/FeatureCard';
+import Testimonials from '../components/Testimonials';
+import StatsBreak from '../components/StatsBreak';
 import './Home.css';
 
 const Home = () => {
@@ -72,6 +74,10 @@ const Home = () => {
         </div>
       </section>
 
+      <StatsBreak />
+
+      {/*TESTIMONIALS SECTION*/}
+      <Testimonials />
     </div>
   );
 };
