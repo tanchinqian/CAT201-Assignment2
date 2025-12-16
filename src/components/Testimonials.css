@@ -1,47 +1,79 @@
 .testimonials-section {
     padding: 80px 20px;
-    background-color: #f9f9f9; /* Light grey background to separate from white sections */
+    background-color: #f9f9f9;
     text-align: center;
+    overflow: hidden;
 }
 
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive Grid */
-    gap: 30px;
-    max-width: 1200px;
-    margin: 40px auto 0;
+.section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
 }
 
+.section-subtitle {
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+/* CAROUSEL CONTAINER */
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* THE VIEWPORT */
+.carousel-viewport {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 5px;
+}
+
+/* THE TRACK */
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+/* INDIVIDUAL SLIDE */
+.carousel-slide {
+    min-width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* CARD STYLING */
 .testimonial-card {
     background: white;
-    padding: 30px;
+    padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     text-align: left;
     position: relative;
-    border-top: 5px solid #ff6b6b; /* Accent color on top */
-    transition: transform 0.3s ease;
-}
-
-.testimonial-card:hover {
-    transform: translateY(-5px);
+    border-top: 5px solid #ff6b6b;
+    margin: 0 auto;
 }
 
 .quote-icon {
     font-size: 4rem;
-    color: #eee;
+    color: #f0f0f0;
     font-family: serif;
     position: absolute;
     top: 10px;
-    right: 20px;
+    right: 30px;
     line-height: 1;
 }
 
 .review-text {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     color: #444;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-style: italic;
     position: relative;
     z-index: 1;
@@ -58,14 +90,63 @@
 .review-info h4 {
     margin: 0;
     color: #2c3e50;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .company-name {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: #888;
 }
 
-.review-rating {
-    font-size: 0.9rem;
+/* NAVIGATION BUTTONS */
+.nav-btn {
+    background: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: #764ba2;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-btn:hover {
+    background: #764ba2;
+    color: white;
+}
+
+.prev-btn {
+    left: -25px;
+}
+
+.next-btn {
+    right: -25px;
+}
+
+/* DOTS INDICATOR */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #ff6b6b;
+    transform: scale(1.2);
 }
