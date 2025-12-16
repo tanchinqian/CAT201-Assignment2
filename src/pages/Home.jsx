@@ -24,6 +24,14 @@ const Home = () => {
     }
   ];
 
+  const scrollToMission = () => { //Scroll to mission section 
+    const element = document.getElementById('main-section');
+    if (element) {
+      // 'smooth' creates that nice gliding animation
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="home-container">
       
@@ -36,15 +44,16 @@ const Home = () => {
             for businesses in Malaysia.
           </p>
           <div className="hero-buttons">
-            <button className="btn btn-primary">Get Started</button>
+            <button className="btn btn-primary" onClick={scrollToMission} >Get Started</button>
             <button className="btn btn-secondary">Contact Us</button>
           </div>
         </div>
-        
       </section>
 
+      <div id="main-section" className="info-wrapper">
       {/*MISSION & VISION SECTION*/}
-      <section className="mission-section">
+
+      <section id="mission-section" className="mission-section">
         <div className="mission-container">
             <div className="mission-box">
                 <h2>Our Mission</h2>
@@ -56,23 +65,28 @@ const Home = () => {
             </div>
         </div>
       </section>
-    
-      {/*SERVICES SECTION*/}
-      <section className="features">
         <h2>Why Choose Us?</h2>
+
+      <div className="features-grid">
         <div className="features-grid">
-          <div className="features-grid">
-            {features.map((item, index) => (
-              <FeatureCard 
-                key={index}
-                title={item.title}
-                desc={item.desc}
-                icon={item.icon}
-              />
-            ))}
-          </div>
+          {features.map((item, index) => (
+            <FeatureCard 
+              key={index}
+              title={item.title}
+              desc={item.desc}
+              icon={item.icon}
+            />
+          ))}
         </div>
-      </section>
+      </div>
+
+   
+    
+
+      
+    
+
+    </div>
 
       <StatsBreak />
 

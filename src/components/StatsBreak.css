@@ -1,3 +1,5 @@
+
+/*Static*/
 .stats-break {
     background-image: url('images/stats-break-image.jpg');
     background-attachment: fixed; /* This creates parallax scrolling effect */

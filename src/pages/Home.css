@@ -1,9 +1,13 @@
-/*Hero Section CSS Styling*/
-.hero {
+.home-container {
  
-  min-height: calc(100vh - 60px);
-  
+  display: block; /* This forces standard top-to-bottom layout */
+  width: 100%;
+}
 
+/*Hero Section Styling*/
+.hero {
+ margin-top: 0;
+  min-height: calc(100vh - 70px);
   display: flex;
   align-items: center;    
   justify-content: center; 
@@ -23,6 +27,7 @@
 
 .hero-content {
   max-width: 800px;
+  margin-top: 0;
 }
 
 .hero-title {
@@ -45,7 +50,7 @@
   justify-content: center;
   gap: 15px;
 }
-/*Button CSS Styling*/
+/*Button Styling*/
 .btn {
   padding: 12px 30px;
   font-size: 1rem;
@@ -73,9 +78,10 @@
 }
 
 .features {
-  padding: 4rem 2rem;
+
   text-align: center;
-  background-color: #ffffff;
+  width: 100%;
+  background-color: transparent;
 }
 
 .features h2 {
@@ -116,12 +122,31 @@
   color: #666;
   line-height: 1.5;
 }
+/*Main Content Styling*/
+.info-wrapper {
 
-.mission-section {
-    background-color: #f8f9fa;
-    padding: 3rem 2rem;
-    text-align: center;
+  background-color: #f8f9fa; 
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 100%;
+
+  /*Allow stacking of child components */
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 5rem;
+
+  
 }
+/* Mission Section Styling*/
+.mission-section {
+
+  width: 100%; /* FORCE FULL WIDTH */
+  display: flex;
+  justify-content: center; /* Centers the inner container */
+
+}
+
 
 .mission-container {
     max-width: 1000px;
