@@ -78,6 +78,8 @@ const Home = () => {
 
       {/*TESTIMONIALS SECTION*/}
       <Testimonials />
+
+      
     </div>
   );
 };
