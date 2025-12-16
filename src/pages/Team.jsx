@@ -5,9 +5,10 @@ import './Team.css';
 
 const Team = () => {
   const teamMembers = [
-    { id: 1, name: 'Alice Smith', role: 'Project Lead' },
-    { id: 2, name: 'Bob Jones', role: 'Developer' },
-    { id: 3, name: 'Charlie Day', role: 'Designer' },
+    { id: 1, name: 'Tan Chin Qian', role: 'Project Manager & Lead Developer' },
+    { id: 2, name: 'Chong Han Zheng', role: 'Backend Architect & Cloud Specialist' },
+    { id: 3, name: 'Elson Ooi Yin Feng', role: 'UI/UX Designer & Frontend Engineer' },
+    { id: 4, name: 'Lau Jun Hao', role: 'System Analyst & QA Engineer' },
   ];
 
   return (
