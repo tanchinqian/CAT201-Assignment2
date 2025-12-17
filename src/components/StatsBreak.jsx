@@ -15,7 +15,7 @@ const StatsBreak = () => {
               <span>Projects Completed</span>
             </div>
             <div className="stat-item">
-              <h3>100%</h3>
+              <h3>99.9%</h3>
               <span>Client Satisfaction</span>
             </div>
             <div className="stat-item">
