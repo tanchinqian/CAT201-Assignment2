@@ -1,18 +1,18 @@
 .testimonials-section {
     padding: 80px 20px;
-    background-color: #f9f9f9;
+    background-color: #0D1B2A;
     text-align: center;
     overflow: hidden;
 }
 
 .section-title {
     font-size: 2.5rem;
-    color: #333;
+    color: #E0E0E0;
     margin-bottom: 0.5rem;
 }
 
 .section-subtitle {
-    color: #666;
+    color: #B0BEC5;
     margin-bottom: 3rem;
 }
 
@@ -49,19 +49,19 @@
 
 /* CARD STYLING */
 .testimonial-card {
-    background: white;
+    background: #1B2D45;
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     text-align: left;
     position: relative;
-    border-top: 5px solid #ff6b6b;
+    border-top: 5px solid #64B5F6;
     margin: 0 auto;
 }
 
 .quote-icon {
     font-size: 4rem;
-    color: #f0f0f0;
+    color: #2c3e50;
     font-family: serif;
     position: absolute;
     top: 10px;
@@ -71,7 +71,7 @@
 
 .review-text {
     font-size: 1.2rem;
-    color: #444;
+    color: #E0E0E0;
     line-height: 1.6;
     margin-bottom: 25px;
     font-style: italic;
@@ -83,19 +83,19 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #2C3E50;
     padding-top: 15px;
 }
 
 .review-info h4 {
     margin: 0;
-    color: #2c3e50;
+    color: #64B5F6;
     font-size: 1.1rem;
 }
 
 .company-name {
     font-size: 0.9rem;
-    color: #888;
+    color: #B0BEC5;
 }
 
 /* NAVIGATION BUTTONS */
@@ -106,7 +106,7 @@
     height: 45px;
     border-radius: 50%;
     font-size: 1.5rem;
-    color: #764ba2;
+    color: #64B5F6;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     cursor: pointer;
     transition: all 0.2s ease;
@@ -117,8 +117,8 @@
 }
 
 .nav-btn:hover {
-    background: #764ba2;
-    color: white;
+    background: #64B5F6;
+    color: #0D1B2A;
 }
 
 .prev-btn {
@@ -140,13 +140,13 @@
 .dot {
     width: 12px;
     height: 12px;
-    background-color: #ddd;
+    background-color: #2C3E50;
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .dot.active {
-    background-color: #ff6b6b;
+    background-color: #64B5F6;
     transform: scale(1.2);
 }
