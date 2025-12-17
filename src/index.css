@@ -2,15 +2,16 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Crucial: Makes width/height calculations accurate */
+  box-sizing: border-box;
 }
 
 body, html {
   width: 100%;
   height: 100%;
-  overflow-x: hidden; /* Stops side-scrolling */
+  overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #0D1B2A;
+    color: #E0E0E0;
 }
 
 #root {

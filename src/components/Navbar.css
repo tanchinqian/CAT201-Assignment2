@@ -5,15 +5,18 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem; 
-  background-color: #333;
+  background-color: #1B2D45;
   color: white;
   position: relative;
   z-index: 10;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .nav-logo {
   margin: 0;
   font-size: 1.5rem;
+    color: #64B5F6;
+    font-weight: 700;
 }
 
 .nav-links {
@@ -22,11 +25,12 @@
 }
 
 .nav-item {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
+    color: #E0E0E0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .nav-item:hover {
-  color: #ddd;
+  color: #64B5F6;
 }

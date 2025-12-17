@@ -1,7 +1,9 @@
 .footer {
-  background-color: #f1f1f1;
+  background-color: #1B2D45;
   text-align: center;
   padding: 1rem;
-  margin-top: auto; /* Pushes footer to bottom if using flex-column layout */
+  margin-top: auto;
   width: 100%;
+  color: #B0BEC5;
+  border-top: 1px solid #2C3E50;
 }
