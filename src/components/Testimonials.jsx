@@ -6,7 +6,7 @@ const Testimonials = () => {
         {
             name: "Dr. Aiman",
             company: "HealthCare Plus",
-            comment: "CyTex transformed our patient booking system. Highly professional team!",
+            comment: "HanZex transformed our patient booking system. Highly professional team!",
             rating: "⭐⭐⭐⭐⭐"
         },
         {
