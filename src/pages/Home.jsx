@@ -9,19 +9,19 @@ const Home = () => {
 
   const features = [
     {
-      title: "Fast Speed",
-      desc: "Our platform is optimized for lightning-fast performance.",
-      icon: "🚀" 
+        title: "Fast Speed",
+        desc: "Our platform is optimized for lightning-fast performance.",
+        icon: <img src="/flash_speed.png" alt="Flash Speed Icon" className="feature-img-icon" />
     },
     {
-      title: "Secure",
-      desc: "We prioritize data protection with top-tier security standards.",
-      icon: "🔒"
+        title: "Secure",
+        desc: "We prioritize data protection with top-tier security standards.",
+        icon: <img src="/shield.png" alt="Secure" className="feature-img-icon" />
     },
     {
-      title: "Scalable",
-      desc: "Solutions that grow with your business without breaking.",
-      icon: "📈"
+        title: "Scalable",
+        desc: "Solutions that grow with your business without breaking.",
+        icon: <img src="/scalable.png" alt="Growth" className="feature-img-icon" />
     }
   ];
 
@@ -35,7 +35,6 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      
       {/*HERO SECTION*/}
       <section className="hero">
         <div className="hero-content">
@@ -53,7 +52,6 @@ const Home = () => {
 
       <div id="main-section" className="info-wrapper">
       {/*MISSION & VISION SECTION*/}
-
       <section id="mission-section" className="mission-section">
         <div className="mission-container">
             <div className="mission-box">
@@ -66,6 +64,7 @@ const Home = () => {
             </div>
         </div>
       </section>
+
         <h2>Why Choose Us?</h2>
 
       <div className="features-grid">
@@ -81,11 +80,11 @@ const Home = () => {
         </div>
       </div>
 
-   
-    
 
-      
-    
+
+
+
+
 
     </div>
 
@@ -94,7 +93,7 @@ const Home = () => {
       {/*TESTIMONIALS SECTION*/}
       <Testimonials />
 
-      
+
     </div>
   );
 };
