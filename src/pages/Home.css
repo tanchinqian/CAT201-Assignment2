@@ -150,3 +150,33 @@
 .mission-box p {
     color: #B0BEC5;
 }
+
+.why-choose-us {
+    background-color: #102033; 
+    
+    padding: 5rem 2rem;
+    text-align: center;
+    width: 100%;
+    
+    border-top: 1px solid rgba(100, 181, 246, 0.1);
+}
+
+.why-choose-us .section-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 4rem;
+    
+    background: linear-gradient(to right, #64B5F6, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.why-choose-us .features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
