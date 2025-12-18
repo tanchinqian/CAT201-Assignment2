@@ -1,7 +1,35 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Footer.css';
 
 const Footer = () => {
+  const [showTopBtn, setShowTopBtn] = useState(false);
+
+  // show scroll up button when scroll down 300px
+  useEffect(() => {
+    
+    const handleScroll = () => {
+      console.log("Scroll Y is:", window.scrollY);
+      if (window.scrollY > 300) {
+        setShowTopBtn(true);
+      } else {
+        setShowTopBtn(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  // this is the function to scroll up smoothly
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -55,6 +83,13 @@ const Footer = () => {
       </div>
 
       <p className='footer-bottom'>&copy; {new Date().getFullYear()} HanZex. All rights reserved.</p>
+
+      {/* scroll up button */}
+      {showTopBtn && (
+        <button className="scroll-to-top" onClick={scrollToTop}>
+          &#8593;
+        </button>
+      )}
     </footer>
   );
 };
