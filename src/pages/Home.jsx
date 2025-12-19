@@ -30,6 +30,13 @@ const Home = () => {
     }
   };
 
+  const scrollToContact = () => {
+    const element = document.getElementById('footer');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="home-container">
       
@@ -43,7 +50,7 @@ const Home = () => {
           </p>
           <div className="hero-buttons">
             <button className="btn btn-primary" onClick={scrollToMission}>Get Started</button>
-            <button className="btn btn-secondary">Contact Us</button>
+            <button className="btn btn-secondary" onClick={scrollToContact}>Contact Us</button>
           </div>
         </div>
       </section>
