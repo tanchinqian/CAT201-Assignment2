@@ -98,6 +98,27 @@ const Team = () => {
           <button className="join-btn">See Open Positions</button>
         </div>
       </section>
+
+      {/* Corporate Video Section */}
+      <section className="corporate-video-section">
+        <div className="video-content">
+          <h2>Our Story</h2>
+          <p>
+            See how HanZex transforms ideas into reality. We believe in transparency, 
+            collaboration, and pushing the boundaries of technology.
+          </p>
+        </div>
+
+        <div className="video-wrapper">
+          <video 
+            controls 
+            className="main-video" 
+          >
+            <source src="/hero-video.mp4" type="video/mp4" /> {/* i put a video placeholder here */}
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
      
     </div>
   );

@@ -176,12 +176,63 @@
   box-shadow: 0 0 10px rgba(100, 181, 246, 0.5);
 }
 
+/* --- CORPORATE VIDEO --- */
+.corporate-video-section {
+    padding: 5rem 2rem;
+    background-color: #0b1622;
+    text-align: center;
+    border-top: 1px solid #1f3a52;
+}
+
+.video-content {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+.video-content h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.video-content p {
+    color: #B0BEC5;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.video-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 20px;
+    padding: 10px;
+    background: linear-gradient(135deg, #2C3E50, #0b1622);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.main-video {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    display: block;
+    outline: none;
+    border: 1px solid #2C3E50;
+}
+
 @media (max-width: 768px) {
     .team-header {
         padding: 3rem 1.5rem;
     }
-    
     .team-header h1 {
         font-size: 2.2rem;
+    }
+
+    .video-content h2 {
+        font-size: 2rem;
+    }
+    .video-wrapper {
+        width: 100%;
+        padding: 5px;
     }
 }
