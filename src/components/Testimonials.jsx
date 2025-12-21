@@ -7,25 +7,21 @@ const Testimonials = () => {
             name: "Dr. Aiman",
             company: "HealthCare Plus",
             comment: "HanZex transformed our patient booking system. Highly professional team!",
-            rating: "⭐⭐⭐⭐⭐"
         },
         {
             name: "Sarah Lee",
             company: "Fire Phoenix Cafe",
             comment: "The website is so fast and looks great on mobile. Our sales increased by 20%.",
-            rating: "⭐⭐⭐⭐⭐"
         },
         {
             name: "Mr. Chong",
             company: "T. Logistics Co.",
             comment: "Great communication throughout the project. They really understand SMEs.",
-            rating: "⭐⭐⭐⭐⭐"
         },
         {
             name: "Emily Tan",
             company: "Penang Arts Centre",
             comment: "Beautiful design and seamless user experience. Highly recommended!",
-            rating: "⭐⭐⭐⭐⭐"
         }
     ];
 
@@ -71,7 +67,6 @@ const Testimonials = () => {
                                             <h4>{review.name}</h4>
                                             <span className="company-name">{review.company}</span>
                                         </div>
-                                        <div className="review-rating">{review.rating}</div>
                                     </div>
                                 </div>
                             </div>
