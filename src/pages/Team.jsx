@@ -90,15 +90,6 @@ const Team = () => {
         </div>
       </div>
 
-      {/* Join Us Section */}
-      <section className="join-team-section">
-        <div className="join-content">
-          <h2>Want to join the HanZex team?</h2>
-          <p>We are always looking for talented developers and innovators to help us build the future.</p>
-          <button className="join-btn">See Open Positions</button>
-        </div>
-      </section>
-
       {/* Corporate Video Section */}
       <section className="corporate-video-section">
         <div className="video-content">
@@ -117,6 +108,49 @@ const Team = () => {
             <source src="/hero-video.mp4" type="video/mp4" /> {/* i put a video placeholder here */}
             Your browser does not support the video tag.
           </video>
+        </div>
+      </section>
+
+      {/* Office Hours Section */}
+      <section className="office-info-section">
+        <div className="office-container">
+          
+          <div className="office-text">
+            <h2>Visit Our HQ</h2>
+            <p className="address">
+              11800, Universiti Sains Malaysia,<br />
+              Gelugor, Penang, Malaysia.
+            </p>
+            <p className="contact-detail">📞 +60 19-708 1826</p>
+          </div>
+
+          <div className="hours-card">
+            <h3>Working Hours</h3>
+            <ul className="hours-list">
+              <li>
+                <span>Mon - Fri</span>
+                <span className="time">9:00 AM - 5:00 PM</span>
+              </li>
+              <li>
+                <span>Saturday</span>
+                <span className="time">10:00 AM - 2:00 PM</span>
+              </li>
+              <li>
+                <span>Sunday</span>
+                <span className="time closed">Closed</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Join Us Section */}
+      <section className="join-team-section">
+        <div className="join-content">
+          <h2>Want to join the HanZex team?</h2>
+          <p>We are always looking for talented developers and innovators to help us build the future.</p>
+          <button className="join-btn">See Open Positions</button>
         </div>
       </section>
      
