@@ -7,8 +7,7 @@ const Team = () => {
       id: 1, 
       name: 'Tan Chin Qian', 
       role: 'Project Manager & Lead Developer',
-      image: 'https://ui-avatars.com/api/?name=Tan+Chin+Qian&background=64B5F6&color=fff&size=200',
-      bio: 'Placeholder',
+      image: '../public/Cq.png',
       linkedin: 'https://www.linkedin.com/in/tan-chin-qian-5146641b5',
       email: 'tanchinqian@gmail.com'
     },
@@ -16,8 +15,7 @@ const Team = () => {
       id: 2, 
       name: 'Chong Han Zheng', 
       role: 'Backend Architect & Cloud Specialist',
-      image: 'https://ui-avatars.com/api/?name=Chong+Han+Zheng&background=9575CD&color=fff&size=200',
-      bio: 'Placeholder',
+      image: '../public/Hz.png',
       linkedin: 'https://www.linkedin.com/in/chong-han-zheng-8bb613339',
       email: 'elsonooi2005@gmail.com' 
     },
@@ -25,8 +23,7 @@ const Team = () => {
       id: 3, 
       name: 'Elson Ooi Yin Feng', 
       role: 'UI/UX Designer & Frontend Engineer',
-      image: 'https://ui-avatars.com/api/?name=Elson+Ooi&background=4DB6AC&color=fff&size=200',
-      bio: 'Placeholder',
+      image: '../public/Elson.png',
       linkedin: 'https://www.linkedin.com/in/elson-ooi-yin-feng-666005314',
       email: 'chonghanzheng@gmail.com'
     },
@@ -34,8 +31,7 @@ const Team = () => {
       id: 4, 
       name: 'Lau Jun Hao', 
       role: 'System Analyst & QA Engineer',
-      image: 'https://ui-avatars.com/api/?name=Lau+Jun+Hao&background=FFB74D&color=fff&size=200',
-      bio: 'Placeholder',
+      image: '../public/Jh.png',
       linkedin: 'https://www.linkedin.com/in/jun-hao-lau-8874a6276',
       email: 'goku0123321@gmail.com'
     },
