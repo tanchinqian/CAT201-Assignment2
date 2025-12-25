@@ -1,15 +1,289 @@
-.about-content {
-  padding: 3rem;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
-  min-height: 80vh;
+/* src/pages/About.css */
+
+/* General Page Styling */
+.page-container {
   color: #E0E0E0;
+  background-color: #0D1B2A;
+  /* Match index.css body bg */
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  /* Assuming Inter or fallback */
 }
 
-.about-content h2 {
-  color: #E0E0E0;
-  border-bottom: 2px solid #64B5F6;
+/* Hero Section */
+.about-hero {
+  padding: 6rem 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #0D1B2A 0%, #1B263B 100%);
+  border-bottom: 1px solid #2C3E50;
+  animation: fadeIn 1s ease-out;
+}
+
+.about-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #64B5F6, #1976D2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-hero-content p {
+  font-size: 1.25rem;
+  color: #B0BEC5;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Philosophy Section */
+.philosophy-section {
+  padding: 4rem 2rem;
+  background-color: #0D1B2A;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
   display: inline-block;
-  padding-bottom: 5px;
+  position: relative;
+}
+
+.section-header h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #64B5F6;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.section-header p {
+  color: #B0BEC5;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.philosophy-card {
+  background: rgba(255, 255, 255, 0.05);
+  /* Glassmorphism start */
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.philosophy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-color: #64B5F6;
+}
+
+.philosophy-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #81D4FA;
+}
+
+.philosophy-card p {
+  color: #CFD8DC;
+  line-height: 1.6;
+}
+
+/* Methodology Section */
+.methodology-section {
+  padding: 4rem 2rem;
+  background-color: #102030;
+  /* Slightly lighter than bg */
+}
+
+.methodology-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.step-item {
+  flex: 1;
+  min-width: 250px;
+  background: #0D1B2A;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  border: 1px solid #2C3E50;
+}
+
+.step-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgba(100, 181, 246, 0.1);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  line-height: 1;
+}
+
+.step-item h3 {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: #E0E0E0;
+  margin-bottom: 0.5rem;
+}
+
+.step-item p {
+  color: #B0BEC5;
+  font-size: 0.95rem;
+}
+
+/* Tech Stack Section */
+.tech-stack-section {
+  padding: 4rem 2rem;
+  background-color: #0D1B2A;
+}
+
+.tech-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tech-category {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: .3s;
+}
+
+.tech-category:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #64B5F6;
+}
+
+.tech-category h3 {
+  font-size: 1.5rem;
+  color: #81D4FA;
+  margin-bottom: 1rem;
+}
+
+.tech-desc {
+  color: #B0BEC5;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Industries Section */
+.industries-section {
+  padding: 4rem 2rem;
+  background-color: #102030;
+}
+
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.industry-card {
+  background: #0D1B2A;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #CFD8DC;
+  border: 1px solid #2C3E50;
+  transition: .3s;
+}
+
+.industry-card:hover {
+  border-color: #64B5F6;
+  color: #64B5F6;
+}
+
+/* CTA Section */
+.about-cta {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: linear-gradient(to top, #0D1B2A, #1B263B);
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.cta-content p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: #B0BEC5;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #64B5F6;
+  color: #000;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.cta-btn:hover {
+  background: #42A5F5;
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .methodology-steps {
+    flex-direction: column;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
