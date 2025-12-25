@@ -10,7 +10,7 @@ const Projects = () => {
             title: 'SmartCity IoT Dashboard',
             category: 'IoT',
             description: 'Real-time monitoring of urban traffic and energy consumption with live data visualization.',
-            image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop', // Placeholder
+            image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop',
             tech: ['React', 'Node.js', 'MQTT', 'Chart.js']
         },
         {
@@ -18,7 +18,7 @@ const Projects = () => {
             title: 'Neuromarket AI',
             category: 'AI',
             description: 'Predictive analytics tool for retail businesses to forecast trends using machine learning.',
-            image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1000&auto=format&fit=crop', // Placeholder
+            image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1000&auto=format&fit=crop',
             tech: ['Python', 'TensorFlow', 'React', 'AWS']
         },
         {
@@ -26,7 +26,7 @@ const Projects = () => {
             title: 'EduTrack System',
             category: 'Web',
             description: 'Comprehensive student management portal for local universities with grade tracking.',
-            image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1000&auto=format&fit=crop', // Placeholder
+            image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1000&auto=format&fit=crop',
             tech: ['React', 'Firebase', 'Tailwind']
         },
         {
@@ -34,7 +34,7 @@ const Projects = () => {
             title: 'LuxStay Realty',
             category: 'Web',
             description: 'Award-winning landing page for a luxury real estate firm featuring immersive animations.',
-            image: 'https://images.unsplash.com/photo-1600596542815-274d588bec0f?q=80&w=1000&auto=format&fit=crop', // Placeholder
+            image: 'https://images.unsplash.com/photo-1613545325278-f24b0cae1224?q=80&w=1000&auto=format&fit=crop',
             tech: ['React', 'GSAP', 'UI/UX']
         }
     ];
@@ -77,9 +77,6 @@ const Projects = () => {
                         <div key={project.id} className="project-card">
                             <div className="project-img-wrapper">
                                 <img src={project.image} alt={project.title} />
-                                <div className="overlay">
-                                    <button className="view-btn">View Case Study</button>
-                                </div>
                             </div>
                             <div className="project-info">
                                 <div className="project-category">{project.category}</div>
