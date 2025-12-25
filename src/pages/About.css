@@ -200,14 +200,18 @@
 }
 
 .industries-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 1.5rem;
+  width: 90%;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .industry-card {
+  flex: 1 1 200px;
+  max-width: 250px;
   background: #0D1B2A;
   padding: 1.5rem;
   text-align: center;
