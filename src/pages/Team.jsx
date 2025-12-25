@@ -7,7 +7,7 @@ const Team = () => {
       id: 1, 
       name: 'Tan Chin Qian', 
       role: 'Project Manager & Lead Developer',
-      image: '../public/Cq.png',
+      image: '/Cq.png',
       linkedin: 'https://www.linkedin.com/in/tan-chin-qian-5146641b5',
       email: 'tanchinqian@gmail.com'
     },
@@ -15,7 +15,7 @@ const Team = () => {
       id: 2, 
       name: 'Chong Han Zheng', 
       role: 'Backend Architect & Cloud Specialist',
-      image: '../public/Hz.png',
+      image: '/Hz.png',
       linkedin: 'https://www.linkedin.com/in/chong-han-zheng-8bb613339',
       email: 'elsonooi2005@gmail.com' 
     },
@@ -23,7 +23,7 @@ const Team = () => {
       id: 3, 
       name: 'Elson Ooi Yin Feng', 
       role: 'UI/UX Designer & Frontend Engineer',
-      image: '../public/Elson.png',
+      image: '/Elson.png',
       linkedin: 'https://www.linkedin.com/in/elson-ooi-yin-feng-666005314',
       email: 'chonghanzheng@gmail.com'
     },
@@ -31,7 +31,7 @@ const Team = () => {
       id: 4, 
       name: 'Lau Jun Hao', 
       role: 'System Analyst & QA Engineer',
-      image: '../public/Jh.png',
+      image: '/Jh.png',
       linkedin: 'https://www.linkedin.com/in/jun-hao-lau-8874a6276',
       email: 'goku0123321@gmail.com'
     },
