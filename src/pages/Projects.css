@@ -17,6 +17,7 @@
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
+    animation: fadeIn 1s ease-out;
 }
 
 .projects-hero-content h1 {
