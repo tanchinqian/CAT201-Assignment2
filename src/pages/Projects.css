@@ -1,0 +1,240 @@
+/* Page Structure */
+.projects-page {
+    background-color: #0D1B2A;
+    min-height: 100vh;
+    padding-bottom: 4rem;
+}
+
+/* Hero Section */
+.projects-hero {
+    padding: 6rem 2rem 3rem;
+    text-align: center;
+    background: linear-gradient(135deg, #0D1B2A 0%, #102030 100%);
+    border-bottom: 1px solid #2C3E50;
+}
+
+.projects-hero-content {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.projects-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, #64B5F6, #1976D2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.projects-hero-content p {
+    color: #B0BEC5;
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+/* Filter Buttons */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 3rem 2rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid #2C3E50;
+    color: #B0BEC5;
+    padding: 0.6rem 1.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    border-color: #64B5F6;
+    color: #fff;
+}
+
+.filter-btn.active {
+    background: #64B5F6;
+    border-color: #64B5F6;
+    color: #0D1B2A;
+    box-shadow: 0 0 15px rgba(100, 181, 246, 0.4);
+}
+
+/* Projects Grid */
+.projects-grid-section {
+    padding: 0 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: #1B2D45;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #2C3E50;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    border-color: #64B5F6;
+}
+
+/* Image Wrapper */
+.project-img-wrapper {
+    width: 100%;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-img-wrapper img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 27, 42, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .overlay {
+    opacity: 1;
+}
+
+.view-btn {
+    background: transparent;
+    border: 2px solid #64B5F6;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.view-btn:hover {
+    background: #64B5F6;
+    color: #0D1B2A;
+}
+
+/* Project Info */
+.project-info {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-category {
+    font-size: 0.85rem;
+    color: #64B5F6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.project-info h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.project-info p {
+    color: #B0BEC5;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+    /* Pushes tech tags to bottom if text is short */
+}
+
+/* Tech Tags */
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-tag {
+    background: rgba(255, 255, 255, 0.05);
+    color: #E0E0E0;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* CTA Section */
+.project-cta {
+    text-align: center;
+    padding: 5rem 2rem 0;
+}
+
+.project-cta h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.project-cta p {
+    color: #B0BEC5;
+    margin-bottom: 2rem;
+}
+
+.start-project-btn {
+    background: #64B5F6;
+    color: #0D1B2A;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.start-project-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(100, 181, 246, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .projects-hero-content h1 {
+        font-size: 2.2rem;
+    }
+}
