@@ -30,7 +30,8 @@
 .team-content {
     padding: 0 2rem;
     max-width: 1200px;
-    margin: 0 auto 8rem; /* Added margin-bottom for spacing */
+    margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .team-grid {
