@@ -99,8 +99,10 @@
     border-radius: 8px;
     color: white;
     font-size: 0.95rem;
+    font-family: inherit;
     outline: none;
     transition: border-color 0.3s;
+    resize: none; /* this prevents the box resizeable */
 }
 
 .input-group input:focus, 
