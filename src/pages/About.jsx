@@ -1,9 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import './About.css';
 
 const About = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="page-container">
 
@@ -117,7 +120,7 @@ const About = () => {
         <div className="cta-content">
           <h2>Ready to transform your business?</h2>
           <p>Let's discuss how our technical expertise can solve your challenges.</p>
-          <a href="#footer" className="cta-btn">Let's Discuss Your Project</a>
+          <button className="cta-btn" onClick={() => navigate('/contact')}>Let's Discuss Your Project</button>
         </div>
       </section>
 

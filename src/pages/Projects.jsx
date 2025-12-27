@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Projects.css';
 
 const Projects = () => {
+    const navigate = useNavigate();
     const [filter, setFilter] = useState('All');
 
     const projects = [
@@ -97,7 +99,7 @@ const Projects = () => {
             <section className="project-cta">
                 <h2>Have a project in mind?</h2>
                 <p>Let's build something amazing together.</p>
-                <button className="start-project-btn">Start Your Project</button>
+                <button className="start-project-btn" onClick={() => navigate('/contact')}>Start Your Project</button>
             </section>
 
         </div>
