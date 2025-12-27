@@ -3,33 +3,33 @@ import './Team.css';
 
 const Team = () => {
   const teamMembers = [
-    { 
-      id: 1, 
-      name: 'Tan Chin Qian', 
+    {
+      id: 1,
+      name: 'Tan Chin Qian',
       role: 'Project Manager & Lead Developer',
       image: '/Cq.png',
       linkedin: 'https://www.linkedin.com/in/tan-chin-qian-5146641b5',
       email: 'tanchinqian@gmail.com'
     },
-    { 
-      id: 2, 
-      name: 'Chong Han Zheng', 
+    {
+      id: 2,
+      name: 'Chong Han Zheng',
       role: 'Backend Architect & Cloud Specialist',
       image: '/Hz.png',
       linkedin: 'https://www.linkedin.com/in/chong-han-zheng-8bb613339',
-      email: 'elsonooi2005@gmail.com' 
+      email: 'chonghanzheng@gmail.com'
     },
-    { 
-      id: 3, 
-      name: 'Elson Ooi Yin Feng', 
+    {
+      id: 3,
+      name: 'Elson Ooi Yin Feng',
       role: 'UI/UX Designer & Frontend Engineer',
       image: '/Elson.png',
       linkedin: 'https://www.linkedin.com/in/elson-ooi-yin-feng-666005314',
-      email: 'chonghanzheng@gmail.com'
+      email: 'elsonooi2005@gmail.com'
     },
-    { 
-      id: 4, 
-      name: 'Lau Jun Hao', 
+    {
+      id: 4,
+      name: 'Lau Jun Hao',
       role: 'System Analyst & QA Engineer',
       image: '/Jh.png',
       linkedin: 'https://www.linkedin.com/in/jun-hao-lau-8874a6276',
@@ -39,12 +39,12 @@ const Team = () => {
 
   return (
     <div className="page-container">
-      
+
       {/* Team Header Section */}
       <div className="team-header">
         <h1>Our Team</h1>
         <p>
-          Meet the minds behind HanZex. We are a passionate team of developers, 
+          Meet the minds behind HanZex. We are a passionate team of developers,
           designers, and strategists dedicated to your digital success.
         </p>
       </div>
@@ -60,10 +60,9 @@ const Team = () => {
               <div className="card-body">
                 <h3>{member.name}</h3>
                 <p className="team-role">{member.role}</p>
-                <p className="team-bio">{member.bio}</p>
-                
+
                 <div className="team-socials">
-                  <a 
+                  <a
                     href={member.linkedin}
                     target="_blank" // this tells browser to open new link in a new tab
                     rel="noopener noreferrer"
@@ -71,9 +70,9 @@ const Team = () => {
                   >
                     LinkedIn
                   </a>
-                  <a 
+                  <a
                     href={`mailto:${member.email}`}
-                    target="_blank" 
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="social-btn contact-btn"
                   >
@@ -91,15 +90,15 @@ const Team = () => {
         <div className="video-content">
           <h2>Our Story</h2>
           <p>
-            See how HanZex transforms ideas into reality. We believe in transparency, 
+            See how HanZex transforms ideas into reality. We believe in transparency,
             collaboration, and pushing the boundaries of technology.
           </p>
         </div>
 
         <div className="video-wrapper">
-          <video 
-            controls 
-            className="main-video" 
+          <video
+            controls
+            className="main-video"
           >
             <source src="/hero-video.mp4" type="video/mp4" /> {/* i put a video placeholder here */}
             Your browser does not support the video tag.
@@ -110,7 +109,7 @@ const Team = () => {
       {/* Office Hours Section */}
       <section className="office-info-section">
         <div className="office-container">
-          
+
           <div className="office-text">
             <h2>Visit Our HQ</h2>
             <p className="address">
@@ -149,7 +148,7 @@ const Team = () => {
           <button className="join-btn">See Open Positions</button>
         </div>
       </section>
-     
+
     </div>
   );
 };
