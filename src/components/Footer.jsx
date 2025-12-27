@@ -8,7 +8,6 @@ const Footer = () => {
   useEffect(() => {
     
     const handleScroll = () => {
-      console.log("Scroll Y is:", window.scrollY);
       if (window.scrollY > 300) {
         setShowTopBtn(true);
       } else {
