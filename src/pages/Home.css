@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-/*Hero Section Styling*/
+/* Hero Section Styling */
 .hero {
   margin-top: 0;
   min-height: calc(100vh - 70px);
@@ -13,71 +13,91 @@
   text-align: center;
   padding: 2rem;
   color: white;
-
-
   background-image:
-    linear-gradient(rgba(13, 27, 42, 0.7), rgba(13, 27, 42, 0.7)),
+    linear-gradient(135deg, rgba(13, 27, 42, 0.9), rgba(27, 45, 69, 0.8)),
     url('/images/hero-image.jpg');
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-content {
   max-width: 800px;
   margin-top: 0;
+  animation: fadeUp 1s ease-out;
 }
 
 .hero-title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 800;
-  margin-bottom: 1rem;
-  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  background: linear-gradient(to right, #ffffff, #90CAF9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-subtitle {
   font-size: 1.25rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   opacity: 0.9;
-  font-weight: 300;
+  font-weight: 400;
   color: #B0BEC5;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 
 .hero-buttons {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
 }
 
-/*Button Styling*/
+/* Button Styling */
 .btn {
-  padding: 12px 30px;
+  padding: 14px 35px;
   font-size: 1rem;
   border-radius: 50px;
   border: none;
   cursor: pointer;
   font-weight: 600;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .btn-primary {
   background-color: #64B5F6;
   color: #0D1B2A;
+  box-shadow: 0 4px 15px rgba(100, 181, 246, 0.4);
+}
+
+.btn-primary:hover {
+  background-color: #42A5F5;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(100, 181, 246, 0.6);
 }
 
 .btn-secondary {
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.05);
   border: 2px solid #64B5F6;
   color: #64B5F6;
+  backdrop-filter: blur(5px);
 }
 
-.btn:hover {
+.btn-secondary:hover {
+  background-color: rgba(100, 181, 246, 0.1);
   transform: translateY(-3px);
-  box-shadow: 0 4px 15px rgba(100, 181, 246, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Features Section */
 .features {
   text-align: center;
   width: 100%;
@@ -97,18 +117,16 @@
   flex-wrap: wrap;
 }
 
-
-/*Main Content Styling*/
+/* Main Content Styling */
 .info-wrapper {
-
   background-color: #0D1B2A;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5rem;
+  gap: 6rem;
   color: #E0E0E0;
 }
 
@@ -116,15 +134,14 @@
   color: #E0E0E0;
 }
 
-/* Mission Section Styling*/
+/* Mission Section Styling */
 .mission-section {
-  width: 100%; /* FORCE FULL WIDTH */
-  display: flex;
-  justify-content: center; /* Centers the inner container */
+  width: 100%;
+  padding: 0 2rem;
 }
 
 .mission-container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;
   gap: 2rem;
@@ -132,43 +149,49 @@
   flex-wrap: wrap;
 }
 
-
 .mission-box {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 2rem;
-  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2.5rem;
+  border-radius: 24px;
   flex: 1;
-  min-width: 300px;
+  min-width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .mission-box h2 {
   color: #64B5F6;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .mission-box p {
   color: #B0BEC5;
+  line-height: 1.7;
+  font-size: 1.05rem;
 }
 
 .why-choose-us {
   background-color: #102033;
-
-  padding: 5rem 2rem;
+  padding: 6rem 2rem;
   text-align: center;
   width: 100%;
-
-  border-top: 1px solid rgba(100, 181, 246, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .why-choose-us .section-title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 800;
   margin-bottom: 4rem;
-
   background: linear-gradient(to right, #64B5F6, #ffffff);
   -webkit-background-clip: text;
   background-clip: text;
@@ -183,4 +206,34 @@
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .mission-container {
+    flex-direction: column;
+  }
+  
+  .why-choose-us .section-title {
+    font-size: 2.5rem;
+  }
 }

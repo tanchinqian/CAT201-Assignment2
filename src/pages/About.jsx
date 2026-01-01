@@ -120,7 +120,7 @@ const About = () => {
         <div className="cta-content">
           <h2>Ready to transform your business?</h2>
           <p>Let's discuss how our technical expertise can solve your challenges.</p>
-          <button className="cta-btn" onClick={() => navigate('/contact')}>Let's Discuss Your Project</button>
+          <button className="cta-btn" onClick={() => { navigate('/contact'); setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100); }}>Let's Discuss Your Project</button>
         </div>
       </section>
 

@@ -1,7 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Team.css';
 
 const Team = () => {
+  const navigate = useNavigate();
+
+  const handleContact = (e) => {
+    e.preventDefault();
+    navigate('/contact');
+    setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
+  };
+
   const teamMembers = [
     {
       id: 1,
@@ -64,20 +73,18 @@ const Team = () => {
                 <div className="team-socials">
                   <a
                     href={member.linkedin}
-                    target="_blank" // this tells browser to open new link in a new tab
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="social-btn"
                   >
                     LinkedIn
                   </a>
-                  <a
-                    href={`mailto:${member.email}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    onClick={handleContact}
                     className="social-btn contact-btn"
                   >
                     Contact
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -145,7 +152,7 @@ const Team = () => {
         <div className="join-content">
           <h2>Want to join the HanZex team?</h2>
           <p>We are always looking for talented developers and innovators to help us build the future.</p>
-          <button className="join-btn">See Open Positions</button>
+          <button className="join-btn" onClick={() => alert("We are currently fully staffed! Please check back later or follow our LinkedIn for updates.")}>See Open Positions</button>
         </div>
       </section>
 

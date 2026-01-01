@@ -8,7 +8,7 @@
 /* --- HEADER SECTION --- */
 .team-header {
     text-align: center;
-    padding: 5rem 2rem 3rem;
+    padding: 8rem 2rem 3rem;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -30,7 +30,7 @@
 .team-content {
     padding: 0 2rem;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 8rem; /* Added margin-bottom for spacing */
 }
 
 .team-grid {

@@ -99,7 +99,7 @@ const Projects = () => {
             <section className="project-cta">
                 <h2>Have a project in mind?</h2>
                 <p>Let's build something amazing together.</p>
-                <button className="start-project-btn" onClick={() => navigate('/contact')}>Start Your Project</button>
+                <button className="start-project-btn" onClick={() => { navigate('/contact'); setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100); }}>Start Your Project</button>
             </section>
 
         </div>

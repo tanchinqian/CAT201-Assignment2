@@ -11,6 +11,7 @@ const Contact = () => {
     });
 
     const [showNotification, setShowNotification] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleChange = (e) => {
         setFormData({
@@ -21,23 +22,27 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setIsSubmitting(true);
 
-        // Show notification
-        setShowNotification(true);
-
-        // Reset form after submission
-        setFormData({
-            name: '',
-            email: '',
-            company: '',
-            phone: '',
-            message: ''
-        });
-
-        // Auto-hide notification after 3 seconds
+        // Simulate network request
         setTimeout(() => {
-            setShowNotification(false);
-        }, 3000);
+            setIsSubmitting(false);
+            setShowNotification(true);
+
+            // Reset form after submission
+            setFormData({
+                name: '',
+                email: '',
+                company: '',
+                phone: '',
+                message: ''
+            });
+
+            // Auto-hide notification after 3 seconds
+            setTimeout(() => {
+                setShowNotification(false);
+            }, 3000);
+        }, 1500);
     };
 
     return (
@@ -94,6 +99,7 @@ const Contact = () => {
                                         onChange={handleChange}
                                         placeholder="John Doe"
                                         required
+                                        disabled={isSubmitting}
                                     />
                                 </div>
 
@@ -107,6 +113,7 @@ const Contact = () => {
                                         onChange={handleChange}
                                         placeholder="john@company.com"
                                         required
+                                        disabled={isSubmitting}
                                     />
                                 </div>
                             </div>
@@ -121,6 +128,7 @@ const Contact = () => {
                                         value={formData.company}
                                         onChange={handleChange}
                                         placeholder="Your Company Ltd."
+                                        disabled={isSubmitting}
                                     />
                                 </div>
 
@@ -133,6 +141,7 @@ const Contact = () => {
                                         value={formData.phone}
                                         onChange={handleChange}
                                         placeholder="+60 12-345 6789"
+                                        disabled={isSubmitting}
                                     />
                                 </div>
                             </div>
@@ -147,11 +156,12 @@ const Contact = () => {
                                     placeholder="Tell us about your project, goals, and timeline..."
                                     rows="6"
                                     required
+                                    disabled={isSubmitting}
                                 ></textarea>
                             </div>
 
-                            <button type="submit" className="submit-btn">
-                                Send Message
+                            <button type="submit" className={`submit-btn ${isSubmitting ? 'loading' : ''}`} disabled={isSubmitting}>
+                                {isSubmitting ? 'Sending...' : 'Send Message'}
                             </button>
                         </form>
                     </div>
@@ -189,9 +199,9 @@ const Contact = () => {
                         <div className="social-section">
                             <h3>Follow Us</h3>
                             <div className="social-icons">
-                                <a href="#" className="social-icon">LinkedIn</a>
-                                <a href="#" className="social-icon">Instagram</a>
-                                <a href="#" className="social-icon">Twitter</a>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">LinkedIn</a>
+                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">Instagram</a>
+                                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">Twitter</a>
                             </div>
                         </div>
                     </div>
