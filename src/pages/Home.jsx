@@ -1,56 +1,57 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import FeatureCard from '../components/FeatureCard';
 import Testimonials from '../components/Testimonials';
 import StatsBreak from '../components/StatsBreak';
 import './Home.css';
 
 const Home = () => {
+  const navigate = useNavigate();
+
   const features = [
     {
-        title: "Fast Speed",
-        desc: "Our platform is optimized for lightning-fast performance.",
-        icon: <img src="/flash_speed.png" alt="Flash Speed Icon" className="feature-img-icon" />
+      title: "Fast Speed",
+      desc: "Our platform is optimized for lightning-fast performance.",
+      icon: <img src="/flash_speed.png" alt="Flash Speed Icon" className="feature-img-icon" />
     },
     {
-        title: "Secure",
-        desc: "We prioritize data protection with top-tier security standards.",
-        icon: <img src="/shield.png" alt="Secure" className="feature-img-icon" />
+      title: "Secure",
+      desc: "We prioritize data protection with top-tier security standards.",
+      icon: <img src="/shield.png" alt="Secure" className="feature-img-icon" />
     },
     {
-        title: "Scalable",
-        desc: "Solutions that grow with your business without breaking.",
-        icon: <img src="/scalable.png" alt="Growth" className="feature-img-icon" />
+      title: "Scalable",
+      desc: "Solutions that grow with your business without breaking.",
+      icon: <img src="/scalable.png" alt="Growth" className="feature-img-icon" />
     }
   ];
 
-  const scrollToMission = () => { 
+  const scrollToMission = () => {
     const element = document.getElementById('main-section');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
-  const scrollToContact = () => {
-    const element = document.getElementById('footer');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleContactClick = () => {
+    navigate('/contact');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
     <div className="home-container">
-      
+
       {/* HERO SECTION */}
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">Innovating Your Digital Future</h1>
           <p className="hero-subtitle">
-            We provide cutting-edge Web Development, IoT Solutions, and AI integration 
+            We provide cutting-edge Web Development, IoT Solutions, and AI integration
             for businesses in Malaysia.
           </p>
           <div className="hero-buttons">
             <button className="btn btn-primary" onClick={scrollToMission}>Get Started</button>
-            <button className="btn btn-secondary" onClick={scrollToContact}>Contact Us</button>
+            <button className="btn btn-secondary" onClick={handleContactClick}>Contact Us</button>
           </div>
         </div>
       </section>
@@ -58,31 +59,31 @@ const Home = () => {
       {/* MISSION & VISION SECTION*/}
       <div id="main-section" className="info-wrapper">
         <section id="mission-section" className="mission-section">
-            <div className="mission-container">
-                <div className="mission-box">
-                    <h2>Our Mission</h2>
-                    <p>To empower local SMEs with scalable software solutions that drive efficiency and growth.</p>
-                </div>
-                <div className="mission-box">
-                    <h2>Our Vision</h2>
-                    <p>To become the leading Tech Consultancy in Penang by 2028 through innovation and excellence.</p>
-                </div>
+          <div className="mission-container">
+            <div className="mission-box">
+              <h2>Our Mission</h2>
+              <p>To empower local SMEs with scalable software solutions that drive efficiency and growth.</p>
             </div>
+            <div className="mission-box">
+              <h2>Our Vision</h2>
+              <p>To become the leading Tech Consultancy in Penang by 2028 through innovation and excellence.</p>
+            </div>
+          </div>
         </section>
-      </div> 
+      </div>
 
       {/* FEATURES SECTION */}
       <section className="why-choose-us">
         <h2 className="section-title">Why Choose Us?</h2>
         <div className="features-grid">
-            {features.map((item, index) => (
-            <FeatureCard 
-                key={index}
-                title={item.title}
-                desc={item.desc}
-                icon={item.icon}
+          {features.map((item, index) => (
+            <FeatureCard
+              key={index}
+              title={item.title}
+              desc={item.desc}
+              icon={item.icon}
             />
-            ))}
+          ))}
         </div>
       </section>
 
